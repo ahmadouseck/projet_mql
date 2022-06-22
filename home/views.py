@@ -1,3 +1,4 @@
+from django import views
 from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth.models import User
 from django.contrib.auth  import authenticate,  login, logout
@@ -6,6 +7,8 @@ from django.contrib.auth.decorators import login_required
 from .forms import ProfileForm, BlogPostForm
 from django.views.generic import UpdateView
 from django.contrib import messages
+
+
 
 
 def blogs(request):
